@@ -11,36 +11,14 @@
       font-family: 'Raleway', sans-serif;
 
   }
-  .modal{
-    position: absolute;
-    width:50vw;
-    background-color: #FFF;
-    height:35vh;
-    left: 25%;
-    top:25%;
-    z-index: 100;
-    border-radius: 5px;
-    padding:20px;
-    text-align:center;    
-  }
-  .modal a{
+  .swal a{
       color:rgb(4, 36, 21);
       text-decoration: none;
-      border-bottom:1px dashed #000;
+      border-bottom:1px solid #000;
   }
-  .modal a:hover{
+  .swal a:hover{
       font-weight: bold;
       border-bottom:1px double #000;
-  }
-  .modal p{
-      margin-bottom:5px;
-  }
-  #btnStart{
-    background-color:rgb(4, 36, 21);
-    color:rgb(28, 204, 107);
-    font-weight: bold;
-    border-radius: 5px;
-    padding:5px;
   }
   .memory-game {
     width: 50vw;

@@ -40,7 +40,7 @@ function checkForMatch(){
     let confere = (firstCard.dataset.tipo === secondCard.dataset.tipo);
     confere ? disableCards() : unflipCards();
     if( document.querySelectorAll('.who').length==0){
-        alert(`FIM DE PARTIDA ${score} pontos`)
+        Swal.fire({text:`FIM DE PARTIDA ${score} pontos`})
     }
 }
 function disableCards() {
@@ -67,4 +67,18 @@ function unflipCards() {
       });
      })();
 cards.forEach(card => card.addEventListener('click', flipCard));
-document.getElementById('btnStart').addEventListener('click',()=>{document.getElementById('start').style.display='none';});
+const helloPlayer = ()=>{
+    Swal.fire({
+        title: 'Jogo da Memória',
+        html: `<p class="swal">Feito graças ao <a href="https://medium.freecodecamp.org/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae">Memory Game </a> da <a href="https://github.com/marina-ferreira">Marina Ferreira</a></p>
+              <p  class="swal">A cada erro, perde-se um ponto, a cada acerto, dois.</p>
+              <p  class="swal">
+              Onde consegui os Ícones:<a href="https://visualpharm.com/free-icons/soccer%20ball-595b40b75ba036ed117d959c">[1]</a>
+                  <a href="http://worldvectorlogo.com/">[2]</a>
+                  <a href="http://wikipedia.org/">[3]</a>
+              </p>`,
+        confirmButtonText:'Começar!',      
+        footer: '<span class="swal"><a href="http://paiva-thiago.github.io">Thiago Paiva</a></span>'
+      })
+}
+helloPlayer();
