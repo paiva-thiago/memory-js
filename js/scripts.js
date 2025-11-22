@@ -63,7 +63,7 @@ function checkForMatch(){
     let confere = (firstCard.dataset.tipo === secondCard.dataset.tipo);
     confere ? disableCards() : unflipCards();
     if( document.querySelectorAll('.who').length==0){
-        const finalGameText = `Consegui ${score} pontos no memory fc!`;
+        const finalGameText = `Consegui ${score} pontos no Memória FC!`;
         showShareModal(finalGameText)
     }
 }
@@ -86,4 +86,5 @@ function unflipCards() {
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
 welcome();
