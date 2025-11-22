@@ -1,9 +1,13 @@
-# memory-js
-## Jogo da Memória
+# memory-fc
+## Jogo da Memória 
 
-Feito graças ao [Memory Game](https://medium.freecodecamp.org/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae) da [Marina Ferreira](https://github.com/marina-ferreira)
+Com uma inspiração no [Memory Game](https://medium.freecodecamp.org/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae) da [Marina Ferreira](https://github.com/marina-ferreira)
 
-A cada erro, perde-se um ponto, a cada acerto, dois.
+Apenas um jogo com escudos de clubes de futebol!
 
-Onde consegui os Ícones:<a href="https://visualpharm.com/free-icons/soccer%20ball-595b40b75ba036ed117d959c">[1]</a><a href="http://worldvectorlogo.com/">[2]</a><a href="http://wikipedia.org/">[3]</a>
+Erro: -1 ponto,
+Acerto: +2 pontos
+
+Fonte dos escudos:
+<a href="http://worldvectorlogo.com/">World Vector Logo</a>,<a href="http://www.seeklogo.com/">Seek Logo</a>, <a href="https://www.footylogos.com/">Footy Logos</a> e <a href="http://wikipedia.org/">Wikipedia</a>
               

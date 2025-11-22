@@ -20,7 +20,7 @@
       font-weight: bold;
       border-bottom:1px double #000;
   }
-  .memory-game {
+  #memory-game {
     width: 50vw;
     height: 90vh;
     margin: auto;
@@ -30,7 +30,7 @@
   }
   .memory-card {
     width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    height: calc(25% - 10px);
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
@@ -60,3 +60,21 @@
     transform: rotateY(180deg);
     background:#FFF;  
   }
+  
+  .share-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.share-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.share-buttons button:nth-child(1) { background: #000; color: #fff; } /* X */
+.share-buttons button:nth-child(2) { background: #0085ff; color: #fff; } /* Bluesky */
+.share-buttons button:nth-child(3) { background: #000; color: #fff; } /* Threads */
